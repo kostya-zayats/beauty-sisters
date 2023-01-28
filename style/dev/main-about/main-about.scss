@@ -1,0 +1,25 @@
+.main-about {
+  padding: 19.7rem 6.7rem 10rem;
+
+  h2 {
+    margin-bottom: 6.8rem;
+    max-width: 68rem;
+  }
+}
+
+.main-about-unit-wrap {
+  display: flex;
+  margin: 0 -3.3rem;
+}
+
+.main-about-unit {
+  width: 33.333%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 0 3.3rem;
+
+  h3 {
+    max-width: 30rem;
+    margin-bottom: 1.9rem;
+  }
+}
