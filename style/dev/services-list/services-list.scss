@@ -17,6 +17,18 @@
 .services-list-unit-text {
   font-size: 2rem;
   line-height: 3rem;
+  font-weight: 600;
   color: $secondary-text-color;
   text-transform: uppercase;
+
+  span {
+    font-weight: 400;
+    text-transform: lowercase;
+  }
+}
+
+.services-list-unit-prices {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: $main-text-color;
 }

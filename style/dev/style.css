@@ -559,6 +559,11 @@ p {
   width: 100%;
   margin: 0 auto; }
 
+.section-prices {
+  max-width: 140rem;
+  width: 100%;
+  margin: 0 auto; }
+
 /* Ens Sections */
 nav {
   position: sticky;
@@ -760,29 +765,35 @@ nav {
   .main-services-desc p {
     margin-bottom: 8.6rem; }
 
-.main-services-desc-list-unit {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 0.1rem solid #AC998A;
-  padding: 2rem 0;
-  transition: .3s;
-  cursor: pointer; }
-  .main-services-desc-list-unit:hover {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    background-color: rgba(151, 129, 115, 0.1); }
-
-.main-services-desc-list-unit-text {
-  font-size: 2rem;
-  line-height: 3rem;
-  color: #978173;
-  text-transform: uppercase; }
-
 .main-services-img {
   width: 50%;
   flex-shrink: 0;
   background: url("../../img/bg/services-bg.jpg") center center no-repeat; }
+
+.main-prices {
+  display: flex;
+  padding-top: 13.1rem; }
+
+.main-prices-img-wrap {
+  width: 50%;
+  flex-shrink: 0;
+  padding: 18.9rem 10.7rem 0 5rem;
+  position: relative; }
+
+.main-prices-img-sticky {
+  position: relative; }
+  .main-prices-img-sticky img {
+    display: block;
+    width: 100%;
+    position: sticky;
+    top: 15rem; }
+
+.main-prices-desc {
+  width: 50%;
+  flex-shrink: 0; }
+
+.main-prices-desc-unit-text {
+  margin: 7.9rem 0 2rem; }
 
 .main-decription {
   padding: 19.7rem 5rem 10rem; }
@@ -849,7 +860,16 @@ nav {
 .services-list-unit-text {
   font-size: 2rem;
   line-height: 3rem;
+  font-weight: 600;
   color: #978173;
   text-transform: uppercase; }
+  .services-list-unit-text span {
+    font-weight: 400;
+    text-transform: lowercase; }
+
+.services-list-unit-prices {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #4D484A; }
 
 /*# sourceMappingURL=style.css.map */

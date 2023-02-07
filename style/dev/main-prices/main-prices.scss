@@ -1,0 +1,31 @@
+.main-prices {
+  display: flex;
+  padding-top: 13.1rem;
+}
+
+.main-prices-img-wrap {
+  width: 50%;
+  flex-shrink: 0;
+  padding: 18.9rem 10.7rem 0 5rem;
+  position: relative;
+}
+
+.main-prices-img-sticky {
+  position: relative;
+
+  img {
+    display: block;
+    width: 100%;
+    position: sticky;
+    top: 15rem;
+  }
+}
+
+.main-prices-desc {
+  width: 50%;
+  flex-shrink: 0;
+}
+
+.main-prices-desc-unit-text {
+  margin: 7.9rem 0 2rem;
+}
