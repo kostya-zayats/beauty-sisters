@@ -53,8 +53,8 @@ h2 {
     font-family: 'Playfair Display', sans-serif;
     font-style: italic;
     font-weight: 400;
-    font-size: 35px;
-    line-height: 47px;
+    font-size: 3.5rem;
+    line-height: 4.7rem;
     letter-spacing: 0.03em;
     text-transform: capitalize;
   }
@@ -82,7 +82,25 @@ h4 {
   text-transform: capitalize;
   color: $secondary-text-color;
   margin-bottom: 1rem;
+}
 
+h5 {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 160%;
+  text-transform: uppercase;
+
+  span {
+    margin-top: -1.4rem;
+    display: block;
+    font-family: 'Playfair Display', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 5.4rem;
+    line-height: 8.6rem;
+    letter-spacing: 0.03em;
+    text-transform: lowercase;
+  }
 }
 
 /* End Headers */
@@ -129,6 +147,12 @@ p {
 }
 
 .section-prices {
+  max-width: 140rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-advantages {
   max-width: 140rem;
   width: 100%;
   margin: 0 auto;
