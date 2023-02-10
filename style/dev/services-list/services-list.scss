@@ -7,10 +7,20 @@
   transition: .3s;
   cursor: pointer;
 
+  @include mobile900 {
+    transition: none;
+  }
+
   &:hover {
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: rgba(151, 129, 115, .1);
+
+    @include mobile900 {
+      padding-left: 0;
+      padding-right: 0;
+      background-color: transparent;
+    }
   }
 }
 
@@ -20,6 +30,11 @@
   font-weight: 600;
   color: $secondary-text-color;
   text-transform: uppercase;
+
+  @include mobile900 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
 
   span {
     font-weight: 400;
@@ -31,4 +46,10 @@
   font-size: 2rem;
   line-height: 3rem;
   color: $main-text-color;
+
+  @include mobile900 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-left: 1rem;
+  }
 }

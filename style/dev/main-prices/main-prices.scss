@@ -1,6 +1,10 @@
 .main-prices {
   display: flex;
   padding-top: 13.1rem;
+
+  @include mobile900 {
+    padding-top: 7.2rem;
+  }
 }
 
 .main-prices-img-wrap {
@@ -8,6 +12,10 @@
   flex-shrink: 0;
   padding: 18.9rem 10.7rem 0 5rem;
   position: relative;
+
+  @include mobile900 {
+    display: none;
+  }
 }
 
 .main-prices-img-sticky {
@@ -24,8 +32,17 @@
 .main-prices-desc {
   width: 50%;
   flex-shrink: 0;
+
+  @include mobile900 {
+    width: 100%;
+    padding: 0 2rem;
+  }
 }
 
 .main-prices-desc-unit-text {
   margin: 7.9rem 0 2rem;
+
+  @include mobile900 {
+    margin-top: 2.8rem;
+  }
 }

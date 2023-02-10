@@ -32,6 +32,11 @@ h1 {
   line-height: 8rem;
   text-transform: uppercase;
 
+  @include mobile900 {
+    font-size: 4.8rem;
+    line-height: 6.5rem;
+  }
+
   span {
     margin-top: -1.1rem;
     display: block;
@@ -40,6 +45,11 @@ h1 {
     line-height: 9.1rem;
     letter-spacing: 0.03em;
     text-transform: capitalize;
+
+    @include mobile900 {
+      font-size: 4.8rem;
+      line-height: 6.5rem;
+    }
   }
 }
 
@@ -49,6 +59,11 @@ h2 {
   line-height: 5.1rem;
   text-transform: uppercase;
 
+  @include mobile900 {
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+  }
+
   .header-sub {
     font-family: 'Playfair Display', sans-serif;
     font-style: italic;
@@ -57,6 +72,11 @@ h2 {
     line-height: 4.7rem;
     letter-spacing: 0.03em;
     text-transform: capitalize;
+
+    @include mobile900 {
+      font-size: 2.5rem;
+      line-height: 4rem;
+    }
   }
 }
 
@@ -66,6 +86,11 @@ h3 {
   line-height: 3rem;
   text-transform: uppercase;
   color:$secondary-text-color;
+
+  @include mobile900 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
 
   span {
     white-space: nowrap;
@@ -90,6 +115,11 @@ h5 {
   line-height: 160%;
   text-transform: uppercase;
 
+  @include mobile900 {
+    font-size: 2.8rem;
+    line-height: 4rem;
+  }
+
   span {
     margin-top: -1.4rem;
     display: block;
@@ -100,6 +130,12 @@ h5 {
     line-height: 8.6rem;
     letter-spacing: 0.03em;
     text-transform: lowercase;
+
+    @include mobile900 {
+      font-size: 2.8rem;
+      line-height: 4rem;
+      display: inline;
+    }
   }
 }
 
@@ -110,52 +146,22 @@ h5 {
 p {
   font-size: 2rem;
   line-height: 3rem;
+
+  @include mobile900 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
 }
 
 /* End Paragraph */
 
-/* Sections */
+/* Sections Wrapper */
 
-.section-intro {
+.main-section {
   max-width: 140rem;
   width: 100%;
   margin: 0 auto;
 }
 
-.section-quote {
-  max-width: 140rem;
-  width: 100%;
-  margin: 0 auto;
-}
 
-.section-about {
-  max-width: 140rem;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.section-services {
-  max-width: 140rem;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.section-decription {
-  max-width: 140rem;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.section-prices {
-  max-width: 140rem;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.section-advantages {
-  max-width: 140rem;
-  width: 100%;
-  margin: 0 auto;
-}
-
-/* Ens Sections */
+/* Ens Sections Wrapper */

@@ -11,6 +11,7 @@ nav {
   font-size: 2rem;
   line-height: 3rem;
   font-weight: 400;
+  white-space: nowrap;
   z-index: 100;
 }
 
@@ -22,6 +23,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include tablet1260 {
+    display: none;
+  }
 }
 
 .nav-links {

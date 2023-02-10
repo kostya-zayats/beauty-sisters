@@ -1,15 +1,29 @@
 .main-decription {
   padding: 19.7rem 5rem 10rem;
 
+  @include mobile900 {
+    padding: 10rem 2rem;
+  }
+
   h2 {
     margin-bottom: 6.8rem;
     max-width: 68rem;
+
+    @include mobile900 {
+      max-width: 100%;
+      margin-bottom: 4.8rem;
+    }
   }
 }
 
 .main-decription-unit-wrap {
   display: flex;
   margin: 0 -3.3rem;
+
+  @include mobile900 {
+    margin: 0;
+    flex-direction: column;
+  }
 }
 
 .main-decription-unit {
@@ -17,6 +31,11 @@
   flex-grow: 1;
   flex-shrink: 0;
   padding: 0 3.3rem;
+
+  @include mobile900 {
+    width: 100%;
+    padding: 0 0 4rem;
+  }
 
   h3 {
     max-width: 30rem;

@@ -1,6 +1,12 @@
 .slick-slider {
   width: 100%;
   height: 100%;
+
+  @include mobile900 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .slick-list {
@@ -20,6 +26,10 @@
 .slick-slider-actions-wrap {
   display: flex;
   padding: 1.5rem 0 0 5rem;
+
+  @include mobile900 {
+    display: none;
+  }
 }
 
 .slick-slider-action-prev {
