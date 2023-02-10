@@ -10,4 +10,9 @@ $(document).ready(function(){
   $('.slick-slider-action-next').click(function(){
     $(".slick-slider").slick('slickNext');
   });
+
+  $('.nav-open-btn').click(function(){
+    $(this).toggleClass('opened');
+    $('.nav-actions').toggleClass('opened');
+  });
 });

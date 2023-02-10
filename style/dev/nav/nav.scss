@@ -13,6 +13,10 @@ nav {
   font-weight: 400;
   white-space: nowrap;
   z-index: 100;
+
+  @include mobile900 {
+    height: 6rem;
+  }
 }
 
 .nav-content {
@@ -24,8 +28,36 @@ nav {
   justify-content: space-between;
   align-items: center;
 
+  @include mobile900 {
+    padding: 0 2rem;
+  }
+}
+
+.nav-actions {
+  flex-grow: 1;
+  display: flex;
+
   @include tablet1260 {
-    display: none;
+    padding: 1.5rem 5rem;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 12rem;
+    right: 0;
+    width: 50rem;
+    background-color: $main-bg;
+    text-align: center;
+    transition: .3s;
+    transform: translate(100%, 0);
+
+    &.opened {
+      transform: translate(0, 0);
+    }
+  }
+
+  @include mobile900 {
+    width: 100%;
+    top: 6rem;
   }
 }
 
@@ -33,6 +65,11 @@ nav {
   flex-grow: 1;
   display: flex;
   align-items: center;
+
+  @include tablet1260 {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 
 .nav-link {
@@ -42,6 +79,13 @@ nav {
   text-transform: capitalize;
   position: relative;
   transition: .3s;
+
+  @include tablet1260 {
+    margin-right: 0;
+    padding: 1.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
 
   &:active {
     color: $main-text-color;
@@ -55,6 +99,10 @@ nav {
     position: absolute;
     top: 100%;
     transition: width .3s;
+
+    @include tablet1260 {
+      display: none;
+    }
   }
 
   &:before {
@@ -76,8 +124,16 @@ nav {
 .logo {
   margin-right: 16.2rem;
 
+  @include tablet1260 {
+    margin-right: 6.2rem;
+  }
+
   img {
     display: block;
+
+    @include mobile900 {
+      width: 8rem;
+    }
   }
 }
 
@@ -90,12 +146,13 @@ nav {
   border-radius: 2.5rem;
   transition: border .3s;
 
+  @include tablet1260 {
+    margin: 1.5rem 0;
+  }
+
   &:hover {
     border: .1rem solid #000;
   }
-}
-
-.nav-btn {
 
   span {
     position: relative;
@@ -107,6 +164,76 @@ nav {
 
     span {
       top: -.3rem;
+    }
+  }
+}
+
+.nav-open-btn {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12rem;
+  height: 12rem;
+  align-items: center;
+  justify-content: center;
+
+  @include tablet1260 {
+    display: flex;
+  }
+
+  @include mobile900 {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  &.opened {
+
+    span {
+
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(.5rem);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(.2rem);
+      }
+
+      &:nth-child(2) {
+        transform: scale(0);
+      }
+    }
+  }
+
+
+  .burger-ico {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+
+    span {
+      display: block;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: .4rem;
+      background-color: $main-text-color;
+      border-radius: .2rem;
+      transition: .3s;
+
+      &:nth-child(1) {
+        top: 0;
+        transform-origin: 0 0;
+      }
+
+      &:nth-child(2) {
+        top: 1.3rem;
+      }
+
+      &:nth-child(3) {
+        bottom: 0;
+        transform-origin: 0 0;
+      }
     }
   }
 }
