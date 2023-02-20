@@ -1,0 +1,23 @@
+@import 'normalize';
+@import 'mixin';
+@import 'premix';
+@import 'variables';
+
+@import 'fonts';
+
+@import 'global';
+
+@import 'nav/nav';
+
+@import 'main-intro/main-intro';
+@import 'main-quote/main-quote';
+@import 'main-about/main-about';
+@import 'main-services/main-services';
+@import 'main-prices/main-prices';
+@import 'main-advantages/main-advantages';
+@import 'main-description/main-description';
+
+@import 'enroll-btn/enroll-btn';
+@import 'services-list/services-list';
+
+@import 'slick-slider/slick-slider';
