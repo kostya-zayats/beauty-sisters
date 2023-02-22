@@ -11,16 +11,18 @@ export const Services = () => {
                     <p>Мы приложили максимум усилий, чтобы создать атмосферу в которой каждый наш гость станет соучастником процесса создания красоты!</p>
                 </div>
                 <div className='services-list'>
-                    {services.map((service, index) => {
-                        return (
-                            <div key={`${service.name}-${index}`} className='services-list-unit'>
-                                <div className='services-list-unit-text'>{service.name}</div>
-                                <div className='services-list-unit-ico'>
-                                    <img src='/img/ico/arrow.svg' alt='' />
+                    {services
+                        .filter((s) => !!s.name)
+                        .map((service, index) => {
+                            return (
+                                <div key={`${service.name}-${index}`} className='services-list-unit'>
+                                    <div className='services-list-unit-text'>{service.name}</div>
+                                    <div className='services-list-unit-ico'>
+                                        <img src='/img/ico/arrow.svg' alt='' />
+                                    </div>
                                 </div>
-                            </div>
-                        );
-                    })}
+                            );
+                        })}
                 </div>
             </div>
             <div className='main-services-img'></div>
