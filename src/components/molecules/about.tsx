@@ -2,7 +2,8 @@ import React from 'react';
 
 export const About = () => {
     return (
-        <div className='main-about'>
+        // <div className='main-about'>
+        <>
             <div className='main-about-img-main'></div>
             <div className='main-about-unit'>
                 <h2>
@@ -12,6 +13,7 @@ export const About = () => {
                 <p>Мы приложили максимум усилий, чтобы создать атмосферу в которой каждый наш гость станет соучастником процесса создания красоты!</p>
             </div>
             <div className='main-about-img-secondary'></div>
-        </div>
+        </>
+        // </div>
     );
 };

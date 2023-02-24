@@ -20,7 +20,7 @@ export default function Home() {
                 <Quote />
             </section>
 
-            <section className={'main-section'}>
+            <section className={'main-section main-about'}>
                 <About />
             </section>
 
