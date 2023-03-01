@@ -211,6 +211,7 @@
     },
     {
         "name": "Депиляция",
+        "image": "/img/bg/depilation.jpg",
         "jobs": [
             {
                 "name": "Депиляция всего тела",

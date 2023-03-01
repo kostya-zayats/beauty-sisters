@@ -3,7 +3,7 @@ import services from '@/data/services.json';
 
 export const Services = () => {
     return (
-        <div className='main-services'>
+        <div className='main-services' id='services'>
             <div className='main-services-desc'>
                 <div className='main-services-desc-text'>
                     <h4>Уход</h4>
@@ -15,12 +15,14 @@ export const Services = () => {
                         .filter((s) => !!s.name)
                         .map((service, index) => {
                             return (
-                                <div key={`${service.name}-${index}`} className='services-list-unit'>
-                                    <div className='services-list-unit-text'>{service.name}</div>
-                                    <div className='services-list-unit-ico'>
-                                        <img src='/img/ico/arrow.svg' alt='' />
+                                <a key={`${service.name}-${index}`} href={`#${service.name}`}>
+                                    <div className='services-list-unit'>
+                                        <div className='services-list-unit-text'>{service.name}</div>
+                                        <div className='services-list-unit-ico'>
+                                            <img src='/img/ico/arrow.svg' alt='' />
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             );
                         })}
                 </div>

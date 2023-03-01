@@ -10,13 +10,13 @@ export const Navigation = () => {
                 <Logo />
                 <div className={`nav-actions ${isOpen ? 'opened' : ''}`}>
                     <div className='nav-links'>
-                        <a className='nav-link' href='#'>
+                        <a className='nav-link' href='#services'>
                             услуги
                         </a>
-                        <a className='nav-link' href='#'>
+                        <a className='nav-link' href='#advantages'>
                             о нас
                         </a>
-                        <a className='nav-link' href='#'>
+                        <a className='nav-link' href='#prices'>
                             цены
                         </a>
                         <a className='nav-link' href='#'>

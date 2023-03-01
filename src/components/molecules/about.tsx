@@ -4,7 +4,7 @@ export const About = () => {
     return (
         // <div className='main-about'>
         <>
-            <div className='main-about-img-main'></div>
+            <div className='main-about-img-main' id='about'></div>
             <div className='main-about-unit'>
                 <h2>
                     о студии <span className='header-sub'>beauty sisters</span>
