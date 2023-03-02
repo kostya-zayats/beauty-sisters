@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import services from '@/data/services.json';
 
 export const Services = () => {
@@ -15,14 +16,14 @@ export const Services = () => {
                         .filter((s) => !!s.name)
                         .map((service, index) => {
                             return (
-                                <a key={`${service.name}-${index}`} href={`#${service.name}`}>
+                                <Link key={`${service.name}-${index}`} href={`${service.link ?? '#' + service.name}`}>
                                     <div className='services-list-unit'>
                                         <div className='services-list-unit-text'>{service.name}</div>
                                         <div className='services-list-unit-ico'>
                                             <img src='/img/ico/arrow.svg' alt='' />
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             );
                         })}
                 </div>

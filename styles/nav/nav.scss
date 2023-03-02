@@ -1,239 +1,238 @@
 nav {
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: $main-bg;
-  height: 12rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  line-height: 3rem;
-  font-weight: 400;
-  white-space: nowrap;
-  z-index: 100;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $main-bg;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 400;
+    white-space: nowrap;
+    z-index: 100;
 
-  @include mobile900 {
-    height: 6rem;
-  }
+    transition: background-color 1s;
+
+    @include mobile900 {
+        height: 6rem;
+    }
 }
 
 .nav-content {
-  max-width: 140rem;
-  padding: 0 5rem;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    max-width: 140rem;
+    padding: 0 5rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  @include mobile900 {
-    padding: 0 2rem;
-  }
+    @include mobile900 {
+        padding: 0 2rem;
+    }
 }
 
 .nav-actions {
-  flex-grow: 1;
-  display: flex;
+    flex-grow: 1;
+    display: flex;
 
-  @include tablet1260 {
-    padding: 1.5rem 5rem;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    top: 12rem;
-    right: 0;
-    width: 50rem;
-    background-color: $main-bg;
-    text-align: center;
-    transition: .3s;
-    transform: translate(100%, 0);
+    @include tablet1260 {
+        padding: 1.5rem 5rem;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 12rem;
+        right: 0;
+        width: 50rem;
+        background-color: $main-bg;
+        text-align: center;
+        transition: 0.3s;
+        transform: translate(100%, 0);
 
-    &.opened {
-      transform: translate(0, 0);
+        &.opened {
+            transform: translate(0, 0);
+        }
     }
-  }
 
-  @include mobile900 {
-    width: 100%;
-    top: 6rem;
-  }
+    @include mobile900 {
+        width: 100%;
+        top: 6rem;
+    }
 }
 
 .nav-links {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
 
-  @include tablet1260 {
-    width: 100%;
-    flex-direction: column;
-  }
+    @include tablet1260 {
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 .nav-link {
-  color: $main-text-color;
-  display: inline-block;
-  margin-right: 5rem;
-  text-transform: capitalize;
-  position: relative;
-  transition: .3s;
-
-  @include tablet1260 {
-    margin-right: 0;
-    padding: 1.5rem 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  &:active {
     color: $main-text-color;
-  }
-
-  &:before, &:after {
-    content: "";
-    width: 0;
-    height: .1rem;
-    background-color: $main-text-color;
-    position: absolute;
-    top: 100%;
-    transition: width .3s;
+    display: inline-block;
+    margin-right: 5rem;
+    text-transform: capitalize;
+    position: relative;
+    transition: 0.3s;
 
     @include tablet1260 {
-      display: none;
+        margin-right: 0;
+        padding: 1.5rem 0;
+        width: 100%;
+        text-align: center;
     }
-  }
 
-  &:before {
-    left: 50%;
-  }
-
-  &:after {
-    right: 50%;
-  }
-
-  &:hover {
-
-    &:before, &:after {
-      width: 50%;
+    &:active {
+        color: $main-text-color;
     }
-  }
+
+    &:before,
+    &:after {
+        content: '';
+        width: 0;
+        height: 0.1rem;
+        background-color: $main-text-color;
+        position: absolute;
+        top: 100%;
+        transition: width 0.3s;
+
+        @include tablet1260 {
+            display: none;
+        }
+    }
+
+    &:before {
+        left: 50%;
+    }
+
+    &:after {
+        right: 50%;
+    }
+
+    &:hover {
+        &:before,
+        &:after {
+            width: 50%;
+        }
+    }
 }
 
 .logo {
-  margin-right: 16.2rem;
+    margin-right: 16.2rem;
 
-  @include tablet1260 {
-    margin-right: 6.2rem;
-  }
-
-  img {
-    display: block;
-
-    @include mobile900 {
-      width: 8rem;
+    @include tablet1260 {
+        margin-right: 6.2rem;
     }
-  }
+
+    img {
+        display: block;
+
+        @include mobile900 {
+            width: 8rem;
+        }
+    }
 }
 
 .nav-btn {
-  line-height: 2.8rem;
-  padding: 1rem 2.4rem;
-  font-family: 'Raleway', sans-serif;
-  background-color: transparent;
-  border: .1rem solid #4D484A;
-  border-radius: 2.5rem;
-  transition: border .3s;
+    line-height: 2.8rem;
+    padding: 1rem 2.4rem;
+    font-family: 'Raleway', sans-serif;
+    background-color: transparent;
+    border: 0.1rem solid #4d484a;
+    border-radius: 2.5rem;
+    transition: border 0.3s;
 
-  @include tablet1260 {
-    margin: 1.5rem 0;
-  }
+    @include tablet1260 {
+        margin: 1.5rem 0;
+    }
 
-  &:hover {
-    border: .1rem solid #000;
-  }
-
-  span {
-    position: relative;
-    top: 0;
-    transition: top .3s;
-  }
-
-  &:active {
+    &:hover {
+        border: 0.1rem solid #000;
+    }
 
     span {
-      top: -.3rem;
+        position: relative;
+        top: 0;
+        transition: top 0.3s;
     }
-  }
+
+    &:active {
+        span {
+            top: -0.3rem;
+        }
+    }
 }
 
 .nav-open-btn {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 12rem;
-  height: 12rem;
-  align-items: center;
-  justify-content: center;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12rem;
+    height: 12rem;
+    align-items: center;
+    justify-content: center;
 
-  @include tablet1260 {
-    display: flex;
-  }
-
-  @include mobile900 {
-    width: 6rem;
-    height: 6rem;
-  }
-
-  &.opened {
-
-    span {
-
-      &:nth-child(1) {
-        transform: rotate(45deg) translate(.5rem);
-      }
-
-      &:nth-child(3) {
-        transform: rotate(-45deg) translate(.2rem);
-      }
-
-      &:nth-child(2) {
-        transform: scale(0);
-      }
+    @include tablet1260 {
+        display: flex;
     }
-  }
 
-
-  .burger-ico {
-    width: 3rem;
-    height: 3rem;
-    position: relative;
-
-    span {
-      display: block;
-      position: absolute;
-      left: 0;
-      width: 100%;
-      height: .4rem;
-      background-color: $main-text-color;
-      border-radius: .2rem;
-      transition: .3s;
-
-      &:nth-child(1) {
-        top: 0;
-        transform-origin: 0 0;
-      }
-
-      &:nth-child(2) {
-        top: 1.3rem;
-      }
-
-      &:nth-child(3) {
-        bottom: 0;
-        transform-origin: 0 0;
-      }
+    @include mobile900 {
+        width: 6rem;
+        height: 6rem;
     }
-  }
+
+    &.opened {
+        span {
+            &:nth-child(1) {
+                transform: rotate(45deg) translate(0.5rem);
+            }
+
+            &:nth-child(3) {
+                transform: rotate(-45deg) translate(0.2rem);
+            }
+
+            &:nth-child(2) {
+                transform: scale(0);
+            }
+        }
+    }
+
+    .burger-ico {
+        width: 3rem;
+        height: 3rem;
+        position: relative;
+
+        span {
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 0.4rem;
+            background-color: $main-text-color;
+            border-radius: 0.2rem;
+            transition: 0.3s;
+
+            &:nth-child(1) {
+                top: 0;
+                transform-origin: 0 0;
+            }
+
+            &:nth-child(2) {
+                top: 1.3rem;
+            }
+
+            &:nth-child(3) {
+                bottom: 0;
+                transform-origin: 0 0;
+            }
+        }
+    }
 }

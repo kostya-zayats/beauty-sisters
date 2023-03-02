@@ -56,9 +56,9 @@ export const Prices = () => {
                             <div className='services-list'>
                                 {service.jobs
                                     .sort((a, b) => a.name.localeCompare(b.name))
-                                    .map((job) => {
+                                    .map((job, index) => {
                                         return (
-                                            <div className='services-list-unit' key={`${job.name}`}>
+                                            <div className='services-list-unit' key={`${job.name}${index}`}>
                                                 <div className='services-list-unit-text'>
                                                     {job.name} <span className={'nowrap'}>/ {getDuration(Number(job.duration))}</span>
                                                 </div>

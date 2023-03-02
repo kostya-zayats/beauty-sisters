@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 import { Logo } from '@/components/atoms';
 
-export const Navigation = () => {
+export const Navigation = ({ backgroundColor }: { backgroundColor: string }) => {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <nav className={'navigation'}>
+        <nav className={'navigation'} style={{ backgroundColor }}>
             <div className={'nav-content'}>
                 <Logo />
                 <div className={`nav-actions ${isOpen ? 'opened' : ''}`}>
