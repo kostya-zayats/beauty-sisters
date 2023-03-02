@@ -2,7 +2,11 @@
 import React, { useState } from 'react';
 import { Logo } from '@/components/atoms';
 
-export const Navigation = ({ backgroundColor }: { backgroundColor: string }) => {
+type NavigationProps = {
+    backgroundColor?: string;
+};
+
+export const Navigation = ({ backgroundColor = '' }: NavigationProps) => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <nav className={'navigation'} style={{ backgroundColor }}>
