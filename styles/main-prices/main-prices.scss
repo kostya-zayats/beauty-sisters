@@ -4,6 +4,7 @@
 
     @include mobile900 {
         padding-top: 7.2rem;
+        padding-left: 0rem;
     }
 
     &-header {
@@ -73,6 +74,15 @@
 .main-prices-desc {
     width: 100%;
     flex-shrink: 0;
+
+    @include mobile900 {
+        width: 100%;
+        padding: 0 2rem;
+    }
+}
+
+.main-prices-desc-unit {
+    width: 50%;
 
     @include mobile900 {
         width: 100%;

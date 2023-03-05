@@ -1,0 +1,41 @@
+.services-desc {
+    flex-shrink: 0;
+    padding: 2.1rem 10.7rem 0 5rem;
+    display: flex;
+
+    @include mobile900 {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    h2 {
+        margin-bottom: 2.3rem;
+    }
+
+    p {
+        margin-bottom: 2.6rem;
+        // margin-right: 2.6rem;
+
+        @include mobile900 {
+            margin-bottom: 2.6rem;
+        }
+    }
+
+    &-text {
+        width: 50%;
+        padding: 2rem;
+
+        @include mobile900 {
+            width: 100%;
+        }
+    }
+
+    &-img {
+        width: 50%;
+    }
+}
+
+.massage {
+    background-image: url('/img/services/massage.png');
+    background-repeat: no-repeat;
+}

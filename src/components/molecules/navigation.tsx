@@ -6,27 +6,32 @@ type NavigationProps = {
     backgroundColor?: string;
 };
 
-export const Navigation = ({ backgroundColor = '' }: NavigationProps) => {
+export const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false);
+
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
     return (
-        <nav className={'navigation'} style={{ backgroundColor }}>
+        <nav className={'navigation'}>
             <div className={'nav-content'}>
                 <Logo />
                 <div className={`nav-actions ${isOpen ? 'opened' : ''}`}>
                     <div className='nav-links'>
-                        <a className='nav-link' href='#services'>
+                        <a className='nav-link' href='#services' onClick={closeMenu}>
                             услуги
                         </a>
-                        <a className='nav-link' href='#advantages'>
+                        <a className='nav-link' href='#advantages' onClick={closeMenu}>
                             о нас
                         </a>
-                        <a className='nav-link' href='#prices'>
+                        <a className='nav-link' href='#prices' onClick={closeMenu}>
                             цены
                         </a>
-                        <a className='nav-link' href='#'>
+                        <a className='nav-link' href='#' onClick={closeMenu}>
                             сертификаты
                         </a>
-                        <a className='nav-link' href='#'>
+                        <a className='nav-link' href='/' onClick={closeMenu}>
                             контакты
                         </a>
                     </div>

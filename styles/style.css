@@ -1196,6 +1196,14 @@ nav {
     }
 }
 
+.main-prices-desc-unit {
+    width: 50%;
+
+    @media (max-width: 900px) {
+        width: 100%;
+    }
+}
+
 .main-prices-desc-unit-text {
     margin: 7.9rem 0 2rem;
 }

@@ -47,7 +47,7 @@ export const Prices = () => {
                             )}
                         </div>
 
-                        <div className='main-prices-desc-unit' key={`${service.name}`} style={{ width: '50%' }}>
+                        <div className='main-prices-desc-unit' key={`${service.name}`}>
                             {!!service.name && (
                                 <div id={service.name} className='main-prices-desc-unit-text'>
                                     <h2>{service.name}</h2>

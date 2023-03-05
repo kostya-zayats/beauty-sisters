@@ -4,30 +4,19 @@ import { Advantages } from '@/components/molecules/advantages';
 import { About } from '@/components/molecules/about';
 import { Prices } from '@/components/prices';
 import { Navigation } from '@/components/molecules/navigation';
-import { Title } from './title';
-import { useEffect, useRef, useState } from 'react';
-import useOnScreen from './useOnScreen';
 
-export default function Massage() {
-    const ref = useRef<HTMLDivElement>(null);
-    const isVisible = useOnScreen(ref);
-    const [bgColor, setBgColor] = useState('#E9E7E1');
-
-    useEffect(() => {
-        setBgColor(isVisible ? '#E9E7E1' : 'black');
-    }, [isVisible]);
-
+export default function Service({
+    children, // will be a page or nested layout
+}: {
+    children: React.ReactNode;
+}) {
     return (
         <main className={'main-container'}>
-            <Navigation backgroundColor={bgColor} />
+            <Navigation />
 
-            <section className={'main-section'}>
-                <div ref={ref}>
-                    <Title />
-                </div>
-            </section>
+            {children}
 
-            <section className={'main-section'}>
+            {/* <section className={'main-section'}>
                 <Intro />
             </section>
 
@@ -53,7 +42,7 @@ export default function Massage() {
 
             <section className={'main-section'}>
                 <Description />
-            </section>
+            </section> */}
         </main>
     );
 }

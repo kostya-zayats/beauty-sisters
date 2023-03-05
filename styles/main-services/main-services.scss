@@ -1,41 +1,41 @@
 .main-services {
-  display: flex;
-  padding-top: 14rem;
+    display: flex;
+    padding-top: 14rem;
 
-  @include mobile900 {
-    padding-top: 10rem;
-  }
+    @include mobile900 {
+        padding-top: 10rem;
+    }
 }
 
 .main-services-desc {
-  width: 50%;
-  flex-shrink: 0;
-  padding: 2.1rem 10.7rem 0 5rem;
-
-  @include mobile900 {
-    width: 100%;
-    padding: 0 2rem;
-  }
-
-  h2 {
-    margin-bottom: 2.3rem;
-  }
-
-  p {
-    margin-bottom: 2.6rem;
+    width: 50%;
+    flex-shrink: 0;
+    padding: 2.1rem 10.7rem 0 5rem;
 
     @include mobile900 {
-      margin-bottom: 2.6rem;
+        width: 100%;
+        padding: 0 2rem;
     }
-  }
+
+    h2 {
+        margin-bottom: 2.3rem;
+    }
+
+    p {
+        margin-bottom: 2.6rem;
+
+        @include mobile900 {
+            margin-bottom: 2.6rem;
+        }
+    }
 }
 
 .main-services-img {
-  width: 50%;
-  flex-shrink: 0;
-  background: url('/img/bg/services-bg.jpg') center center no-repeat;
+    width: 50%;
+    flex-shrink: 0;
+    background: url('/img/bg/services-bg.jpg') center center no-repeat;
 
-  @include mobile900 {
-    display: none;
-  }
+    @include mobile900 {
+        display: none;
+    }
 }

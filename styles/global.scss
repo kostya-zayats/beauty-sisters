@@ -148,7 +148,8 @@ h5 {
 
 /* Paragraph */
 
-p {
+p,
+ul {
     font-size: 2rem;
     line-height: 3rem;
 
@@ -169,4 +170,11 @@ p {
     background-color: $main-bg;
 }
 
+.justify {
+    text-align: justify;
+}
+
+.center {
+    text-align: center;
+}
 /* Ens Sections Wrapper */
